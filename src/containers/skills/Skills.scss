@@ -1,11 +1,41 @@
 @import "../../_globalColor";
 
+/* ---------- Skills Section Background ---------- */
 .skills-main-div {
+  position: relative;
   display: flex;
   width: 100%;
   overflow: hidden;
+  padding: 4rem 2rem;
+
+  /* Background image */
+  background-image: url("../../assets/images/skillsbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
+/* Dark overlay for better readability */
+.skills-main-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+/* Keep all content above the overlay */
+.skills-main-div > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- Text and Layout ---------- */
 .skills-text-div {
   margin-left: 50px;
 }
@@ -18,22 +48,27 @@
 .skills-image-div > img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 255, 255, 0.4);
 }
 
 .skills-heading {
   font-size: 56px;
   font-weight: 400;
+  color: $textColor;
 }
+
 .subTitle {
   color: $subTitle;
 }
 
-/* Media Query */
+/* ---------- Responsive ---------- */
 @media (max-width: 1380px) {
   .skills-heading {
     font-size: 40px;
   }
 }
+
 @media (max-width: 768px) {
   .skills-heading {
     font-size: 30px;
@@ -45,6 +80,7 @@
   }
   .skills-main-div {
     flex-direction: column;
+    background-attachment: scroll; /* smoother for phones */
   }
   .skills-text-div {
     margin-left: 0px;
@@ -58,7 +94,6 @@
     text-align: center;
   }
   .skills-image-div {
-    /* display: none; */
     order: 2;
   }
 }

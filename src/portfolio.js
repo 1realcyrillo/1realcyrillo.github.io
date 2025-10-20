@@ -1,390 +1,233 @@
-/* Change this file to get your personal Portfolio */
+/* Cyril Dwamena Osei Portfolio – built from DeveloperFolio template */
 
-// To change portfolio colors globally go to the  _globalColor.scss file
+// To change global colors → edit  src/_globalColor.scss
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation";
 
-// Splash Screen
-
+// ---------------- Splash Screen ----------------
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: true,
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000
 };
 
-// Summary And Greeting Section
-
-const illustration = {
-  animated: true // Set to false to use static SVG
-};
+// ---------------- Greeting Section ----------------
+const illustration = { animated: true };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Cyril Dwamena Osei",
+  title: "Electrical & Computer Engineering Student at Texas Tech University",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "As the world increasingly runs on software, I believe true innovation happens when software and hardware merge seamlessly. With a passion for electronics, embedded systems, and robotics, I’m focused on developing skills at the intersection of firmware, AI/ML, and hardware integration.\n\nAt Texas Tech University, I’ve gained hands-on experience with microcontrollers, PCB design, robotics projects, and system integration. My goal is to contribute to technologies that power autonomous systems, smart devices, and advanced communications.\n\nI’m actively seeking internship opportunities in embedded systems, firmware development, robotics, and communications engineering — connecting innovation with impact."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+  resumeLink: "/static/resume/Cyril_Dwamena_Resume.pdf",
+  displayGreeting: true
 };
 
-// Social Media Links
 
+// ---------------- Social Media Links ----------------
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  github: "https://github.com/1realcyrillo",
+  linkedin: "https://www.linkedin.com/in/cyril-dwamena-osei-b6a2262a1/",
+  gmail: "cdwamena@ttu.edu",
+  display: true
 };
 
-// Skills Section
-
+// ---------------- Skills Section ----------------
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I Do",
+  subTitle: "Embedded Systems • Robotics • Firmware • Electronics",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚙️ Microcontrollers: MSP430, Arduino, Raspberry Pi, STM32"),
+    emoji("🧰 C, C++, Python, MATLAB, and Verilog for digital logic simulation"),
+    emoji("🤖 Design & integration of sensors, H-bridges, and PWM motor control"),
+    emoji("🧪 Circuit design & analysis with KiCad, oscilloscopes, and bench tools")
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+    { skillName: "C", fontAwesomeClassname: "fas fa-code" },
+    { skillName: "C++", fontAwesomeClassname: "fas fa-code" },
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "MATLAB", fontAwesomeClassname: "fas fa-square-root-alt" },
+    { skillName: "Verilog", fontAwesomeClassname: "fas fa-microchip" },
+    { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" },
+    { skillName: "KiCad", fontAwesomeClassname: "fas fa-cogs" },
+    { skillName: "Figma", fontAwesomeClassname: "fab fa-figma" }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Education Section
-
+// ---------------- Education ----------------
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Texas Tech University",
+      logo: require("./assets/images/ttu.png"),
+      subHeader: "B.S. in Electrical & Computer Engineering",
+      duration: "2023 – Present",
+      desc: "Focused on Signals, Electronics, Microcontrollers, Embedded Systems, and Communications Engineering.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "GPA = 3.8",
+        "IEEE Region 5 Student Leader",
+        "Student Supervisor at IT Help Central"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
-
+// ---------------- Tech Stack Bars ----------------
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
+    { Stack: "Embedded Systems & Microcontrollers", progressPercentage: "90%" },
+    { Stack: "Electronics Circuit Design & PCB Layout", progressPercentage: "85%" },
+    { Stack: "C++ / Embedded C / Python Programming", progressPercentage: "85%" },
+    { Stack: "Sensors, Automation and Control", progressPercentage: "80%" },
+    { Stack: "Computational Modelling", progressPercentage: "80%" }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false
 };
 
-// Work experience section
 
+// ---------------- Work Experience ----------------
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Student Supervisor (IT Help Central)",
+      company: "Texas Tech University",
+      companylogo: require("./assets/images/ttu.png"),
+      date: "Jan 2025 – Present",
+      desc: "Lead a technical support team of student analysts to troubleshoot, document, and resolve software, hardware, and network-related issues across the university campus."
     }
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
+// ---------------- Open Source ----------------
+const openSource = { showGithubProfile: "true", display: true };
 
-const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Some big projects you have worked on
-
+// ---------------- Big Projects ----------------
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "Some of the systems and robots I’ve designed ⚙️",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/linefollower.png"),
+      projectName: "Autonomous Line-Following Robot",
+      projectDesc:
+        "MSP430-based robot using IR sensors for path detection and PWM control for speed adjustment. Developed a smooth feedback control for line tracking.",
       footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
+        { name: "Code", url: "https://github.com/1realcyrillo/LINE-FOLLOWING-ROBOT" },
+        { name: "Demo Video", url: "https://youtube.com/shorts/bAPy7Zf9reE" }
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/colorsorter.png"),
+      projectName: "Automated Color Sorting System",
+      projectDesc:
+        "Arduino-controlled system using a color sensor and servo motor to sort colored objects (like Skittles) into different bins automatically.",
       footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
+        { name: "Code", url: "https://github.com/cyril-dwamena/color-sorter" },
+        { name: "Demo Video", url: "https://youtu.be/cDcGE8OheuI" }
+      ]
+    },
+    {
+      image: require("./assets/images/thermostat.png"),
+      projectName: "Temperature-Controlled Thermostat",
+      projectDesc:
+        "Developed a thermostat using arduino with a temperature sensor, servo motor, and RGB LED to indicate thermal states. Implemented threshold-based servo actuation.",
+      footerLink: [
+        { name: "Code", url: "https://github.com/1realcyrillo/Temperature-controlled-thermostat" }
+      ]
+    },
+    {
+      image: require("./assets/images/network.png"),
+      projectName: "Network Performance Monitoring System",
+      projectDesc:
+        "Built a Python-based real-time data pipeline that tracks network latency and visualizes performance metrics. Integrated with CSV logging and live dashboard.",
+      footerLink: [
+        { name: "Demo Video", url: "https://youtu.be/dSrBphTWt3Y" }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Achievement Section
-// Include certificates, talks etc
-
+// ---------------- Achievements ----------------
+// ---------------- Achievements & Honors ----------------
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: "Achievements & Honors 🏆",
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Recognitions and distinctions that highlight my academic excellence and involvement at Texas Tech University.",
 
+  display: true,
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Blogs Section
-
-const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      title: "Dean’s List (x3)",
+      subtitle: "Texas Tech University",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Recognized three times for outstanding academic excellence (GPA ≥ 3.5) in the Edward E. Whitacre Jr. College of Engineering.",
+      image: require("./assets/images/deanslist.png"), // optional, add later
+      imageAlt: "Dean's List badge",
+      footerLink: []
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      title: "President’s List",
+      subtitle: "Texas Tech University (Spring 2024)",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
+        "Earned President’s List distinction for achieving a perfect 4.0 GPA in the Spring 2024 semester.",
+      image: require("./assets/images/presidentslist.png"), // optional, add later
+      imageAlt: "President's List badge",
+      footerLink: []
+    },
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      title: "ECE Departmental Scholarship Award",
+      subtitle: "Department of Electrical & Computer Engineering, TTU",
+      description:
+        "Awarded by the ECE department for exceptional academic performance, leadership, and contribution to engineering activities.",
+      image: require("./assets/images/eceaward.png"), // optional, add later
+      imageAlt: "ECE Award image",
+      footerLink: []
+    },
+    {
+      title: "IEEE Region 5 cordinator",
+      subtitle: "Institute of Electrical and Electronics Engineers (TTU Chapter)",
+      description:
+        "Active member of IEEE, engaging in robotics, embedded systems, and technical innovation events at Texas Tech.",
+      image: require("./assets/images/ieeelogo.png"), // optional, add later
+      imageAlt: "IEEE logo",
+      footerLink: [
+        {
+          name: "IEEE at TTU",
+          url: "https://ttuieee.org/ttu-ieee-officers/"
+        }
+      ]
     }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  ]
 };
 
-// Podcast Section
 
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+// ---------------- Blogs / Talks / Podcasts ----------------
+const blogSection = { display: false };
+const talkSection = { display: false };
+const podcastSection = { display: false };
+const resumeSection = { display: false };
 
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Resume Section
-const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
-};
-
+// ---------------- Contact ----------------
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  "Great engineering is where logic meets imagination — and that’s where I live every day.",
+  number: "(806) 544-5937",
+  email_address: "cdwamena@ttu.edu"
 };
 
-// Twitter Section
+// ---------------- Twitter / Hireable ----------------
+const twitterDetails = { userName: "", display: false };
+const isHireable = true;
 
-const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
-};
-
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
-
+// ---------------- Exports ----------------
 export {
   illustration,
   greeting,
