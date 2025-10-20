@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/myportfolio/static/css/main.b29cb4b7.css",
+    "main.js": "/myportfolio/static/js/main.555be800.js",
+    "static/css/64.bba8fa55.chunk.css": "/myportfolio/static/css/64.bba8fa55.chunk.css",
+    "static/js/64.56dc6704.chunk.js": "/myportfolio/static/js/64.56dc6704.chunk.js",
+    "static/css/769.b3cbb36b.chunk.css": "/myportfolio/static/css/769.b3cbb36b.chunk.css",
+    "static/js/769.bda0d7b7.chunk.js": "/myportfolio/static/js/769.bda0d7b7.chunk.js",
+    "static/media/me.jpg": "/myportfolio/static/media/me.1fdb22ab206ece1a6663.jpg",
+    "static/media/linefollower.png": "/myportfolio/static/media/linefollower.8036931e9f9a2d527577.png",
+    "static/media/network.png": "/myportfolio/static/media/network.e730cdbf84a0a58f4313.png",
+    "static/media/colorsorter.png": "/myportfolio/static/media/colorsorter.57b564b96fe4f01db446.png",
+    "static/media/educationbg.jpg": "/myportfolio/static/media/educationbg.b278cb50734a86886dfa.jpg",
+    "static/media/hero-bg.jpg": "/myportfolio/static/media/hero-bg.b278cb50734a86886dfa.jpg",
+    "static/media/skillsbg.jpg": "/myportfolio/static/media/skillsbg.b278cb50734a86886dfa.jpg",
+    "static/media/workexperiencebg.jpg": "/myportfolio/static/media/workexperiencebg.b278cb50734a86886dfa.jpg",
+    "static/media/deanslist.png": "/myportfolio/static/media/deanslist.cc885fc4d8678296d72e.png",
+    "static/media/presidentslist.png": "/myportfolio/static/media/presidentslist.54fbdde762c660ae0691.png",
+    "static/media/projectsbg.jpg": "/myportfolio/static/media/projectsbg.528aa0f7092aed19b0d8.jpg",
+    "static/media/Montserrat-Regular.ttf": "/myportfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/thermostat.png": "/myportfolio/static/media/thermostat.1860fe971b4fda340b63.png",
+    "static/media/Agustina.woff": "/myportfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/achievementbg.jpg": "/myportfolio/static/media/achievementbg.db3d4180a006796f7ed3.jpg",
+    "static/media/ieeelogo.png": "/myportfolio/static/media/ieeelogo.96fb07d40eed8174bb09.png",
+    "static/media/ttu.png": "/myportfolio/static/media/ttu.32c859d2bbf9fae76845.png",
+    "static/media/manOnTable.svg": "/myportfolio/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
+    "static/media/eceaward.png": "/myportfolio/static/media/eceaward.10c5422061427a18081c.png",
+    "static/media/developerActivity.svg": "/myportfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
+    "static/media/skill.svg": "/myportfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
+    "index.html": "/myportfolio/index.html",
+    "static/media/talksCardBack.svg": "/myportfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
+    "main.b29cb4b7.css.map": "/myportfolio/static/css/main.b29cb4b7.css.map",
+    "main.555be800.js.map": "/myportfolio/static/js/main.555be800.js.map",
+    "64.bba8fa55.chunk.css.map": "/myportfolio/static/css/64.bba8fa55.chunk.css.map",
+    "64.56dc6704.chunk.js.map": "/myportfolio/static/js/64.56dc6704.chunk.js.map",
+    "769.b3cbb36b.chunk.css.map": "/myportfolio/static/css/769.b3cbb36b.chunk.css.map",
+    "769.bda0d7b7.chunk.js.map": "/myportfolio/static/js/769.bda0d7b7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b29cb4b7.css",
+    "static/js/main.555be800.js"
+  ]
+}
